@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+/**********************************
+LAYOUT
+**********************************/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 60rem;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    flex-basis: 45%;
+}
+
+.bottom {
+    flex-basis: 55%;
+    display: flex;
+}
+.contentOne {
+    flex-basis: 50%;
+}
+.contentTwo {
+    flex-basis: 50%;
+}
+/**********************************
+ADDITIONAL STYLES
+**********************************/
+body {
+    background: hsl(204, 43%, 93%);
+}
+main {
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+.top {
+    padding: 3rem;
+    background: white;
+}
+.top h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: hsl(179, 62%, 43%)
+}
+.top p {
+    font-size: 1.6rem
+}
+.coloredP {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+.normalP {
+    line-height: 1.5;
+    color: hsl(218, 22%, 67%);
+}
+.contentOne {
+    padding: 4rem 3rem;
+    background: hsl(179, 62%, 43%);
+}
+.contentOne h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.contentOne span {
+    font-size: 1.3rem;
+}
+.contentOne .amount {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+.contentOne p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+button {
+    width: 20rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background: hsl(71, 73%, 54%);
+    border: 1px solid hsl(179, 62%, 43%);
+    box-shadow: 0 0.8rem hsl(179, 68%, 39%);
+}
+button:hover {
+    background: hsl(71, 95%, 38%);
+}
+button:active {
+    transform: translateY(0.5rem);
+    box-shadow: 0 0.5rem hsl(179, 71%, 27%)
+}
+.contentTwo {
+    background: hsl(204, 43%, 93%);
+    mix-blend-mode: multiply;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: hsl(179, 62%, 43%);
+    padding: 4rem 3rem;
+    opacity: 0.7;
+}
+.contentTwo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.contentTwo p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/**********************************
+STYLES FOR TABLET [650PX AND BELOW]
+**********************************/
+@media all and ( max-width: 650px ) {
+    main {
+        width: 43rem;
+        font-size: 1.3rem;
+    }
+    .top {
+        padding: 2rem;
+    }
+    .top h2 {
+        font-size: 2rem;
+    }
+    .top p {
+        font-size: 1.3rem;
+    }
+    .container {
+        padding: 2rem 3rem;
+        flex-basis: 50%;
+    }
+    .contentOne {
+        padding: 2rem 3rem;
+    }
+    button {
+        width: 100%;
+    }
+}
+/**********************************
+STYLES FOR MOBILE [450PX AND BELOW]
+**********************************/
+@media all and ( max-width: 450px ) {
+    body {
+        height: auto;
+    }
+    main {
+        width: 90%;
+        height: auto;
+        display: block;
+        overflow: auto;
+        margin-top: 3rem;
+    }
+    .bottom {
+        display: block;
+    }
+    .contentTwo {
+        height: auto;
+    }
+    .contentOne {
+        padding: 2rem;
+    }
+    .container {
+        height: auto;
+        padding: 2rem
+    }
+    button {
+        width: 20rem;
+    }
+}
+}
+/**********************************
+STYLES FOR MOBILE [270PX AND BELOW]
+**********************************/
+@media all and ( max-width: 270px ) {
+    button {
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
