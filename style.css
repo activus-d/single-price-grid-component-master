@@ -133,6 +133,9 @@ button:active {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+.contentOneColoured {
+    color: hsl(220, 5%, 89%);
+}
 /**********************************
 STYLES FOR TABLET [650PX AND BELOW]
 **********************************/
